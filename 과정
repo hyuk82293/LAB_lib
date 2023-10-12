@@ -1,0 +1,32 @@
+mkdir lab
+
+cd lab
+
+notepad  my.c
+ //mymath.c
+  #include <stdio.h>
+
+  int main() {
+    printf("%d", add(22, 33));
+    return 0;
+  }
+
+notepad add.c
+  //add.c
+  int add(int a, b) {
+    return (a + b);
+  }
+
+cl /c *.c
+
+link test add.obj
+
+my
+
+cl /c add.c
+
+lib /OUT:mymath.lib add.abj sub.obj
+
+link my mymath.lib
+
+my
